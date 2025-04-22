@@ -18,7 +18,7 @@
 
 <hr>
 
-<h2>📁 Project Structure</h2>
+<h2>📁 Project Directory Structure</h2>
 
 <pre>
 .
@@ -60,7 +60,6 @@
 <h3>1. Clone the Repository</h3>
 
 <pre><code>git clone https://github.com/KARTIK9990/PES2UG22CS251_PES2UG22CS258_PES2UG22CS275_PES2UG22CS908_Lamda_serverless_function.git
-cd lambda-platform
 </code></pre>
 
 <h3>2. Create a Virtual Environment</h3>
@@ -87,14 +86,17 @@ docker build -f base_node.Dockerfile -t lambda_base_node .
 
 <h3>5. Start the Streamlit Frontend</h3>
 
-<pre><code>streamlit run frontend/app.py
-</code></pre>
+<pre>
+<code>cd frontend</code>
+<code>streamlit run app.py
+</code>
+</pre>
 
 <h3>6. Access the App</h3>
 
 <ul>
   <li>Frontend: <a href="http://localhost:8501" target="_blank">http://localhost:8501</a></li>
-  <li>API Docs: <a href="http://localhost:8000/docs" target="_blank">http://localhost:8000/docs</a></li>
+  <li>API Docs: <a href="http://localhost:8000/docs" target="_blank">http://localhost:8000/docs</a>(swagger ui)</li>
 </ul>
 
 <hr>
@@ -154,8 +156,3 @@ DELETE /functions/{id}                # Delete a function
 <p>Developed by <strong>pes2ug22cs258,pes2ug22cs251,pes2ug22cs270,pes2ug22cs908</strong></p>
 <p>Feel free to ⭐ the repo and contribute!</p>
 
-<hr>
-
-<h2>📝 License</h2>
-
-<p>This project is licensed under the MIT License.</p>
